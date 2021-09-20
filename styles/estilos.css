@@ -13,3 +13,19 @@ ul{
     justify-content: space-between;
     padding: 10px;
 }
+
+.buscar{
+    background-color: white;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.buscar:focus-within{
+    border: 1px solid red;
+}
+
+.buscar > input{
+    outline: none;
+    border: 0px;
+}
