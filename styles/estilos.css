@@ -17,9 +17,9 @@ ul{
 .logo{
     height: 70px;
 }
-.mainButton{
-    background-color: red;
-    color: white;
+
+
+.button{
     font-style: italic;
     font-weight: bolder;
     border-radius: 10px;
@@ -27,8 +27,26 @@ ul{
     box-shadow: 1px 1px black;
 }
 
-.mainButton:hover{
+.button:hover{
     cursor: pointer;
-    box-shadow: 3px 3px black;
     transform: scale(1.1);
+}
+
+.mainButton{
+    background-color: red;
+    color: white;
+    
+}
+
+.mainButton:hover{
+    box-shadow: 3px 3px black;
+}
+
+.secundaryButton{
+    background-color: slategray;
+    color: white;
+}
+
+.secundaryButton:hover{
+    box-shadow: 3px 3px black;
 }
