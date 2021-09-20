@@ -90,16 +90,44 @@ ul{
 
 }
 
-.vehicleCard{
-    margin: 10px;
-}
-
 .vehicleCardContainer{
     display: flex;
-    
 }
+
+.vehicleCard{
+    margin: 10px;
+    background-color: rgb(78, 78, 90);
+    box-shadow: 5px 10px 5px gray;
+    border-radius: 10px;
+}
+
+
+.vehicleTitle{
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    font-style:oblique;
+}
+
+.contenedorImagen:hover{
+    cursor: pointer;
+    transform:scale(1.02);
+}
+
 
 .contenedorImagen > img{
     object-fit: cover;
     width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.tituloCentrado{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
 }
