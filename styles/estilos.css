@@ -82,3 +82,24 @@ ul{
     color: red;
 
 }
+
+.contenedorImagen{
+    height: 350px;
+    width: 240px;
+    display: flex;
+
+}
+
+.vehicleCard{
+    margin: 10px;
+}
+
+.vehicleCardContainer{
+    display: flex;
+    
+}
+
+.contenedorImagen > img{
+    object-fit: cover;
+    width: 100%;
+}
