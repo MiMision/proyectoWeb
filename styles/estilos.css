@@ -131,3 +131,36 @@ ul{
     font-weight: bold;
     font-size: x-large;
 }
+
+.vehicleIcon{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconoCorazon{
+    color: red;
+}
+
+.iconoCorazon:hover{
+    cursor: pointer;
+    transform: scale(1.30);
+}
+
+.iconoCart{
+    color: white;
+}
+
+.iconoCart:hover{
+    cursor: pointer;
+    transform: scale(1.30);
+}
+
+.iconoComment{
+    color: aqua;
+}
+
+.iconoComment:hover{
+    cursor: pointer;
+    transform: scale(1.30);
+}
