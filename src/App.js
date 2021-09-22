@@ -37,7 +37,7 @@ function App() {
                   <div className="contenedorImagen">
                     <img src={ferrariStradle} alt="Ferrari Stradle"/>
                 </div>
-                <span className="vehicleTitle">Ferrari Stradle 2021</span>
+                <span className="vehicleTitle">Ferrari Stradle</span>
                 <div className="vehicleIcon">
                     <i className="fas fa-heart iconoCorazon"></i>
                     <i className="fas fa-shopping-cart iconoCart"></i>
