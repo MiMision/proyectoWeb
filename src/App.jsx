@@ -6,7 +6,7 @@ import mercedesAMG from './media/mercedesAMG.jpg'
 function App() {
   return (
     <div className="App">
-      <header>
+    <header>
         <ul className="navbar">
             <li>
                 <img className="logo" src={logo} alt="imagen"/>
@@ -33,28 +33,8 @@ function App() {
         <section>
             <h1 className="tituloCentrado">VEHICULOS</h1>
             <ul className="vehicleCardContainer">
-                <li className="vehicleCard">
-                  <div className="contenedorImagen">
-                    <img src={ferrariStradle} alt="Ferrari Stradle"/>
-                </div>
-                <span className="vehicleTitle">Ferrari Stradle</span>
-                <div className="vehicleIcon">
-                    <i className="fas fa-heart iconoCorazon"></i>
-                    <i className="fas fa-shopping-cart iconoCart"></i>
-                    <i className="fas fa-comment iconoComment"></i>
-                </div>
-                </li>
-                <li className="vehicleCard">
-                  <div className="contenedorImagen">
-                    <img src={mercedesAMG} alt="Mercedes-Amg GT"/>
-                  </div>
-                  <span className="vehicleTitle">Mercedes-Amg GT</span>
-                  <div className="vehicleIcon">
-                    <i className="fas fa-heart iconoCorazon"></i>
-                    <i className="fas fa-shopping-cart iconoCart"></i>
-                    <i className="fas fa-comment iconoComment"></i>
-                  </div>
-                </li>
+              <CardVehicles vehicleTitle= "Ferrari Stradle" imagen={ferrariStradle}/>
+              <CardVehicles vehicleTitle= "Mercedes AMG GT" imagen={mercedesAMG}/>
             </ul>
         </section>
         <section></section>
@@ -62,6 +42,22 @@ function App() {
     <footer></footer>
     </div>
   );
+}
+
+function CardVehicles({vehicleTitle, imagen}){
+  return(
+  <li className="vehicleCard">
+    <div className="contenedorImagen">
+      <img src={imagen} alt= {vehicleTitle}/>
+    </div>
+    <span className="vehicleName">{vehicleTitle}</span>
+    <div className="cardIcon">
+        <i className="fas fa-heart iconoCorazon"></i>
+        <i className="fas fa-shopping-cart iconoCart"></i>
+        <i className="fas fa-comment iconoComment"></i> 
+    </div>
+  </li>
+  )
 }
 
 export default App;
