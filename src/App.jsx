@@ -1,7 +1,8 @@
-import logo from './media/logo.png'
-import './styles/styles.css';
-import ferrariStradle from './media/ferrariStradle.jpg'
-import mercedesAMG from './media/mercedesAMG.jpg'
+import CardVehicles from 'components/CardVehicles';
+import logo from 'media/logo.png'
+import 'styles/styles.css';
+import ferrariStradle from 'media/ferrariStradle.jpg'
+import mercedesAMG from 'media/mercedesAMG.jpg'
 
 function App() {
   return (
@@ -42,22 +43,6 @@ function App() {
     <footer></footer>
     </div>
   );
-}
-
-function CardVehicles({vehicleTitle, imagen}){
-  return(
-  <li className="vehicleCard">
-    <div className="contenedorImagen">
-      <img src={imagen} alt= {vehicleTitle}/>
-    </div>
-    <span className="vehicleName">{vehicleTitle}</span>
-    <div className="cardIcon">
-        <i className="fas fa-heart iconoCorazon"></i>
-        <i className="fas fa-shopping-cart iconoCart"></i>
-        <i className="fas fa-comment iconoComment"></i> 
-    </div>
-  </li>
-  )
 }
 
 export default App;
