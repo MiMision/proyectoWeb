@@ -1,10 +1,14 @@
 
+import {Link} from 'react-router-dom'
+
 function CardVehicles({vehicleTitle, imagen}){
     return(
     <li className="vehicleCard">
-      <div className="contenedorImagen">
-        <img src={imagen} alt= {vehicleTitle}/>
+      <Link to='/ferrariStradle'>
+        <div className="contenedorImagen">
+          <img src={imagen} alt= {vehicleTitle}/>
       </div>
+      </Link>
       <span className="vehicleName">{vehicleTitle}</span>
       <div className="cardIcon">
           <i className="fas fa-heart iconoCorazon"></i>
@@ -15,4 +19,4 @@ function CardVehicles({vehicleTitle, imagen}){
     )
   }
 
-  export default CardVehicles;
+export default CardVehicles;
