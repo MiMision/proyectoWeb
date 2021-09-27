@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function CardVehicles({vehicleTitle, imagen}){
     return(
     <li className="vehicleCard">
-      <Link to='/ferrariStradle'>
+      <Link to='/Ferrari-stradle'>
         <div className="contenedorImagen">
           <img src={imagen} alt= {vehicleTitle}/>
       </div>
