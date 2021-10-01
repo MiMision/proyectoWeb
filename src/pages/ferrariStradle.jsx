@@ -1,7 +1,10 @@
+import Footer from "components/Footer";
+import Header from "components/Header";
+
 
 function FerrariStradleInfoPage(){
     return(
-        <div>PAGINA DE INFORMACION FERRARI-STRADLE</div>
+        <div>Informacion del Ferrari-Stradle</div>
     ); 
 }
 
